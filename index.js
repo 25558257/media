@@ -16,7 +16,7 @@ window.onload = async ()=>{
 }
 
 var loader = {
-    rootPath:'https://raw.githubusercontent.com/25558257/web-ali/main/',
+    rootPath:'https://raw.githubusercontent.com/25558257/media/main/',
     loadScript(src){
         return new Promise((resolve,reject)=>{
             var script = document.createElement('script');
