@@ -1,0 +1,132 @@
+.media{
+    margin: 0 auto;
+    /* background-color: #fff; */
+    padding: 4px 9px;
+    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+.hope-ui-dark .media{
+    background-color: #000000b8;
+}
+
+.media-dir{
+    font-size: 16px;
+    font-weight: 600;
+    width: 17.6vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+.media-title{
+
+}
+.media-item{
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: normal;
+    background-color: #77797b;
+    color: #fff;
+    margin: 3px 3px;
+    cursor: pointer;
+    word-break: break-all;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.media-item:hover {
+    background-color: #5b5c5e;
+}
+
+.media-item.media-current-item {
+    background-color: #bebebe;
+    border-radius: 5px 5px 5px 5px;
+}
+.media-files{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: auto;
+    align-content: baseline;
+}
+.media-nav{
+    margin: 0px 0 7px 0;
+}
+.media-nav-item{
+    border: 1px solid #818181;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 4px 4px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.media-nav-item:hover {
+    background-color: #e1eafb;
+}
+.artplayer-app{
+    flex-grow: 1;
+}
+#artplayer{
+    width: 100%;
+    height: 96.5%;
+}
+.media-history{
+    width: 23vw;
+}
+.media-history-item{
+    cursor: pointer;
+    padding: 8px 27px 8px 8px;
+    margin: 9px 0px;
+    border-radius: 0px;
+    position: relative;
+}
+.media-history-delete{
+    position: absolute;
+    top: 4px;
+    right: 2%;
+    color: #f00;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.media-show-btn{
+    position: fixed;
+    writing-mode: tb-rl;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid #939393;
+    right: 0;
+    padding: 6px;
+    cursor: pointer;
+    top: 19%;
+}
+.media-show-btn:hover{
+    background-color: #aeaeae;
+    color: #fff;
+}
+.media-player-title{
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 80vw;
+}
+
+@media (max-width: 800px){
+    .media {flex-direction: column-reverse;}
+    .media-dir{
+        width: 52.6vw;
+        margin-top: 3vh;
+    }
+    .artplayer-app{
+        height: 69vh;
+    }
+    .media-with-player{width: 97vw;}
+    .media-history{
+        width: 59vw;
+    }
+}
